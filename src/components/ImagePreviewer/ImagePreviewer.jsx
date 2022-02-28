@@ -5,7 +5,7 @@ import Settings from './BackgroundGenerator/Settings'
 
 const ImagePreviewer = ({image}) => {
 
-    const [colors, setColors] = useState(['#fff', '#000'])
+    const [colors, setColors] = useState(['#4A90E2', '#BD10E0'])
     const [pos, setPos] = useState([0, 100])
 
     const [settings, setSettings] = useState({
