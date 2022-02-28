@@ -8,12 +8,19 @@ const App = () => {
   const [image, setImage] = useState('');
 
   return (
-    <div className="App">
+    <>
       <header className="App-header">
-        <FileUploader setImage={setImage} />
-        <ImagePreviewer image={image}></ImagePreviewer>
+        <h1 className="title">ScreenGround</h1>
+        <p className="subtitle">Create beautiful screenshots easily</p>
       </header>
-    </div>
+      <section className="creator">
+        {
+          !image
+            ? <FileUploader setImage={setImage} />
+            : <ImagePreviewer image={image}></ImagePreviewer>
+        }
+      </section>
+    </>
   );
 }
 

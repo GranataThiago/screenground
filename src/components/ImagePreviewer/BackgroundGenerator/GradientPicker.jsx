@@ -9,7 +9,7 @@ const GradientPicker = ({colors, setColors, pos, setPos}) => {
     }
 
     return (
-        <div>
+        <div class="pickers">
             {
             colors.map((currentColor, i) => {
 
@@ -26,7 +26,7 @@ const GradientPicker = ({colors, setColors, pos, setPos}) => {
                 return <ColorPicker key={crypto.randomUUID()} {...childProps}/>
             })
             }
-            <button onClick={addColor}>+</button>
+            <button onClick={addColor} className="btn btn-primary">Add</button>
         </div>
     )
 }

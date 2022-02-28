@@ -1,13 +1,130 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+.btn {
+	color: #fff;
+	font-weight: 800;
+	font-size: 1rem;
+	padding: 1rem 2rem;
+	border: none;
+}
+
+.btn-rainbow {
+	background-image: linear-gradient(
+		45deg,
+		hsl(240deg 100% 20%) 0%,
+		hsl(289deg 100% 21%) 11%,
+		hsl(315deg 100% 27%) 22%,
+		hsl(329deg 100% 36%) 33%,
+		hsl(337deg 100% 43%) 44%,
+		hsl(357deg 91% 59%) 56%,
+		hsl(17deg 100% 59%) 67%,
+		hsl(34deg 100% 53%) 78%,
+		hsl(45deg 100% 50%) 89%,
+		hsl(55deg 100% 50%) 100%
+	);
+}
+
+.btn-primary {
+	background-color: #d223d8;
+}
+
+.btn:hover {
+	cursor: pointer;
+	box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+input[type="file"] {
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+
+.file-uploader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.file-upload {
+	border: 1px dashed #ccc;
+	color: #999;
+	height: 300px;
+	padding: 6px 12px;
+	cursor: pointer;
+	display: grid;
+	place-items: center;
+}
+
+.file-upload p {
+	position: absolute;
+	font-size: 1rem;
+}
+
+.generator{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.settings {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.setting {
+	display: flex;
+	flex-direction: column;
+	font-size: 1rem;
+	text-align: left;
+}
+
+input[type="number"] {
+	border: 0;
+	border-bottom: 2px solid #c4c4c4;
+	outline: 0;
+	font-size: 1.3rem;
+	color: #fff;
+	padding: 7px 0;
+	background: transparent;
+	transition: border-color 0.2s;
+}
+
+input[type="checkbox"] {
+	margin-top: auto;
+	align-self: center;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.pickers {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 1rem;
+	padding: 1rem 0;
+	margin: 2rem 0;
+	max-width: 1200px;
+}
+
+.picker {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
 }
